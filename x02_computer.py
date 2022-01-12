@@ -1,4 +1,6 @@
 #!python3
+from random import randint
+import random
 """
 Create a function that creates a random choice for the computer player:
 input parameters: none required
@@ -11,10 +13,17 @@ output:
 
 def computerChoice():
   
-  
-  
-  
-  return value
+  choice = randint(0,3)
+
+  if choice == 0:
+    value = "rock"
+    return value
+  if choice == 1:
+    value = "paper"
+    return value
+  if choice == 2:
+    value = "scissors"
+    return value
 
 
 if __name__ == "__main__":
