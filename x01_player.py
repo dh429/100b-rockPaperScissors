@@ -24,7 +24,7 @@ def playerChoice():
   1: paper
   2: scissors
   '''
-  choice = input("Enter your choice")
+  choice = input("Enter your choice: ")
   if choice == "rock":
     value = 0
     return value

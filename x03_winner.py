@@ -17,9 +17,25 @@ Output:
 1: player wins
 '''
 
+
+
+
 def playerWins(computer,player):
+  if computer == player:
+    return 0
+  if player == 0 and computer == 1:
+    return -1
+  if player == 0 and computer == 2:
+    return 1
+  if player == 1 and computer == 0:
+    return 1
+  if player == 1 and computer == 2:
+    return -1
+  if player == 2 and computer == 0:
+    return -1
+  if player == 2 and computer == 1:
+    return 1
   
-  return 0
 
 if __name__ == "__main__":
   assert playerWins(1,1) == 0
